@@ -4,7 +4,7 @@ export function BioSection() {
   return (
     <section
       id="bio"
-      className="border-t border-black/25 bg-msb-brown-elevated px-4 py-20 text-white md:py-28"
+      className="bg-msb-brown px-4 py-20 text-white md:py-28"
     >
       <div className="mx-auto max-w-3xl space-y-10">
         <h2 className="text-center font-display text-2xl tracking-[0.16em] md:text-3xl">
