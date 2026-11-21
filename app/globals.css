@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  /* Squarespace site.css: primary body brown — single field across homepage scroll */
-  --background: #100806;
+  /*
+   * Live Squarespace site.css declares #100806 on body/sections; computed parity
+   * matches that hex, but uninterrupted section fields on the rebuild read lighter
+   * in side-by-side review — single darker warm brown site-wide.
+   */
+  --msb-brown: #0a0302;
+  --background: var(--msb-brown);
   --foreground: #ffffff;
   --accent: #e7d0ba;
 }
@@ -10,7 +15,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-msb-brown: #100806;
+  --color-msb-brown: var(--msb-brown);
   --color-msb-accent: #e7d0ba;
   --font-sans: var(--font-source-code);
   --font-display: var(--font-abel);
