@@ -2,8 +2,8 @@ import { spotifyEmbeds } from "@/data/site";
 
 export function MusicSection() {
   return (
-    <section id="music" className="bg-black px-4 py-16 text-white md:py-20">
-      <div className="mx-auto flex max-w-3xl flex-col gap-10">
+    <section id="music" className="bg-black px-4 py-20 text-white md:py-28">
+      <div className="mx-auto flex max-w-[760px] flex-col gap-12">
         {spotifyEmbeds.map((item) => (
           <figure key={item.embedPath} className="flex flex-col items-center gap-3">
             <figcaption className="text-center text-sm text-white/90 md:text-base">
@@ -11,7 +11,7 @@ export function MusicSection() {
             </figcaption>
             <iframe
               title={`Spotify — ${item.title}`}
-              className="w-full max-w-xl rounded-xl"
+              className="w-full max-w-xl border-0"
               src={`https://open.spotify.com/embed/${item.embedPath}?utm_source=generator&theme=0`}
               width="100%"
               height={item.height}

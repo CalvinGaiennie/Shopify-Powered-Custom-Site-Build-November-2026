@@ -4,12 +4,11 @@ const youtubeUrl = "https://www.youtube.com/channel/UCA8yRIDebIpu9p6Icp_35Rw";
 
 export function MediaSection() {
   return (
-    <section id="media" className="border-t border-white/10 bg-black px-4 py-16 text-white md:py-20">
+    <section id="media" className="bg-black px-4 py-20 text-white md:py-28">
       <div className="mx-auto max-w-3xl space-y-6 text-center">
         <h2 className="font-display text-2xl tracking-[0.18em] md:text-3xl">MEDIA</h2>
-        <p className="text-base leading-relaxed text-white/85 md:text-lg">
-          Music videos, live clips, and behind-the-scenes updates live on YouTube and social
-          channels. Full media gallery layout can mirror the current site in a later iteration.
+        <p className="mx-auto max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
+          Music videos, live clips, and behind-the-scenes updates on YouTube and social channels.
         </p>
         <Link
           href={youtubeUrl}

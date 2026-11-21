@@ -7,14 +7,14 @@ export async function MerchSection() {
   const cartUrl = getShopifyCartUrl();
 
   return (
-    <section id="merch" className="border-t border-white/10 bg-black px-4 py-16 text-white md:py-20">
+    <section id="merch" className="bg-black px-4 py-20 text-white md:py-28">
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3 text-center">
           <h2 className="font-display text-2xl tracking-[0.18em] md:text-3xl">MERCH</h2>
-          <p className="text-sm text-white/70 md:text-base">
+          <p className="text-sm text-white/60 md:text-base">
             {source === "shopify"
-              ? "Featured items from the Shopify store."
-              : "Preview grid — connect Shopify Storefront credentials to load live products."}
+              ? "Featured items from the MSB shop."
+              : "Shop preview — Shopify Storefront connects here when credentials are added."}
           </p>
         </div>
 

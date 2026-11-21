@@ -14,13 +14,12 @@ export const navLinks = [
   { label: "CONTACT", href: "#contact" },
 ] as const;
 
+export type NavLink = (typeof navLinks)[number];
+
 export const assets = {
-  logo:
-    "https://images.squarespace-cdn.com/content/v1/5b594820a2772ccdacbf492f/5c5fe598-1f2e-40d0-925c-bcf1d07026f8/HiQuality.white.stripes.initials.png",
-  heroName:
-    "https://images.squarespace-cdn.com/content/v1/5b594820a2772ccdacbf492f/983b9f2f-1029-4f1f-9940-a17d1597f38a/HiQuality.white.stripes.name.png",
-  heroPhoto:
-    "https://images.squarespace-cdn.com/content/v1/5b594820a2772ccdacbf492f/9da9ad05-4e37-4d87-b13a-e38734fcf4af/IMG_7303+sized.JPG",
+  logo: "/images/msb-logo.png",
+  heroName: "/images/msb-hero-name.png",
+  heroPhoto: "/images/msb-hero.jpg",
 } as const;
 
 export const bioParagraphs = [
