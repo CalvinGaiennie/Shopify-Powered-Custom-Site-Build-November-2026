@@ -2,11 +2,11 @@
 
 :root {
   /*
-   * Live Squarespace site.css declares #100806 on body/sections; computed parity
-   * matches that hex, but uninterrupted section fields on the rebuild read lighter
-   * in side-by-side review — single darker warm brown site-wide.
+   * Live Squarespace site.css declares #100806 on body/sections; rebuild fields read
+   * lighter than live in side-by-side review, so we use one warm near-black brown
+   * site-wide (#0a0302 → #050201: same hue, lower luminance).
    */
-  --msb-brown: #0a0302;
+  --msb-brown: #050201;
   --background: var(--msb-brown);
   --foreground: #ffffff;
   --accent: #e7d0ba;
