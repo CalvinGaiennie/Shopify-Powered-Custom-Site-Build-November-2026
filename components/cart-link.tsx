@@ -1,15 +1,19 @@
 import Link from "next/link";
 import { getShopifyCartUrl } from "@/lib/shopify";
 
-export function CartLink() {
+type Props = {
+  className?: string;
+};
+
+export function CartLink({ className = "" }: Props) {
   const cartUrl = getShopifyCartUrl();
+
+  const shared =
+    "border border-white/80 px-2.5 py-1 font-display tracking-[0.18em] text-white transition hover:bg-white hover:text-black md:px-3 md:py-1.5";
 
   if (cartUrl) {
     return (
-      <Link
-        href={cartUrl}
-        className="border border-white px-3 py-1.5 font-display text-xs tracking-[0.18em] text-white transition hover:bg-white hover:text-black"
-      >
+      <Link href={cartUrl} className={`${shared} text-xs ${className}`}>
         CART
       </Link>
     );
@@ -18,7 +22,7 @@ export function CartLink() {
   return (
     <Link
       href="#merch"
-      className="border border-white/40 px-3 py-1.5 font-display text-xs tracking-[0.18em] text-white/70 transition hover:border-white hover:text-white"
+      className={`${shared} border-white/50 text-white/80 hover:border-white hover:text-white text-xs ${className}`}
       title="Shopify cart will open once store credentials are configured"
     >
       CART

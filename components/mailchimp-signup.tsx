@@ -48,8 +48,8 @@ export function MailchimpSignup({ initiallyConfigured }: Props) {
   return (
     <div className="mx-auto w-full max-w-md space-y-4">
       {!initiallyConfigured ? (
-        <p className="rounded border border-amber-200/20 bg-amber-400/10 px-3 py-2 text-center text-sm text-amber-100/90">
-          Newsletter signup is in preview mode until Mailchimp environment variables are set.
+        <p className="text-center text-xs tracking-wide text-white/50">
+          Newsletter preview — Mailchimp credentials connect on the server when added.
         </p>
       ) : null}
 
