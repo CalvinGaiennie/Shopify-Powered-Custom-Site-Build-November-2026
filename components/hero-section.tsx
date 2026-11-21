@@ -9,11 +9,15 @@ export function HeroSection() {
         alt="Michael Scott Boudreaux performing outdoors in Louisiana"
         fill
         priority
-        className="object-cover object-[center_42%]"
+        className="object-cover object-[center_68%] brightness-[1.05] saturate-[1.14] sepia-[0.09]"
         sizes="100vw"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-b from-msb-brown/55 via-transparent to-msb-brown/65"
+        className="absolute inset-0 bg-gradient-to-b from-msb-brown/45 via-transparent to-msb-brown/55"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-amber-600/16 via-orange-500/6 to-transparent mix-blend-soft-light"
         aria-hidden
       />
 
