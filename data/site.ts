@@ -34,25 +34,25 @@ export const spotifyEmbeds = [
     title: "Burnin' Bridges",
     caption: "Listen to “Burnin’ Bridges” on Spotify!",
     embedPath: "track/4lQwGV1iKuZSkFP5JfZW3R",
-    height: 152,
+    height: 232,
   },
   {
     title: "No Drinkin' Money",
     caption: "Listen to “No Drinkin’ Money” on Spotify!",
     embedPath: "track/6p6p1hj6ua8AIJ8C8Fo5sc",
-    height: 152,
+    height: 232,
   },
   {
     title: "I Want a Girl That Likes to Fish",
     caption: "Listen to “I Want a Girl That Likes to Fish” on Spotify!",
     embedPath: "track/1vKnsOIVqdKKZmuJwRD5vq",
-    height: 152,
+    height: 232,
   },
   {
     title: "Acadiana",
     caption: "Listen to the “Acadiana” album on Spotify!",
     embedPath: "album/61qkHWoUinEzvg9GS5h4Zs",
-    height: 352,
+    height: 472,
   },
 ] as const;
 

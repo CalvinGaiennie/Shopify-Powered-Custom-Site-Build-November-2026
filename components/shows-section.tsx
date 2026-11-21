@@ -5,7 +5,7 @@ export function ShowsSection() {
   return (
     <section
       id="shows"
-      className="border-t border-black/25 bg-msb-brown px-4 py-20 text-center text-white md:py-28"
+      className="bg-msb-brown px-4 py-20 text-center text-white md:py-28"
     >
       <div className="mx-auto max-w-3xl space-y-8">
         <h2 className="font-display text-2xl tracking-[0.2em] md:text-[2rem]">MSB SHOWS</h2>

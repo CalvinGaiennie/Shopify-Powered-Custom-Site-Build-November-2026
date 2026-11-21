@@ -9,7 +9,7 @@ export async function MerchSection() {
   return (
     <section
       id="merch"
-      className="border-t border-black/25 bg-msb-brown px-4 py-20 text-white md:py-28"
+      className="bg-msb-brown px-4 py-20 text-white md:py-28"
     >
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3 text-center">
