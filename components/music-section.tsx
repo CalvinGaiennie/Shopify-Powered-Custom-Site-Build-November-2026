@@ -2,7 +2,10 @@ import { spotifyEmbeds } from "@/data/site";
 
 export function MusicSection() {
   return (
-    <section id="music" className="bg-black px-4 py-20 text-white md:py-28">
+    <section
+      id="music"
+      className="border-t border-black/25 bg-msb-brown px-4 py-20 text-white md:py-28"
+    >
       <div className="mx-auto flex max-w-[760px] flex-col gap-12">
         {spotifyEmbeds.map((item) => (
           <figure key={item.embedPath} className="flex flex-col items-center gap-3">

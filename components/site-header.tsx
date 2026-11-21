@@ -6,7 +6,7 @@ import { MobileNav } from "@/components/mobile-nav";
 
 export function SiteHeader() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-black/70 via-black/45 to-transparent">
+    <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-msb-brown/85 via-msb-brown/50 to-transparent">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 pb-4 pt-4 md:gap-5 md:pb-5 md:pt-5">
         <div className="flex w-full items-center gap-3">
           <div className="flex w-10 shrink-0 md:w-0 md:overflow-hidden">

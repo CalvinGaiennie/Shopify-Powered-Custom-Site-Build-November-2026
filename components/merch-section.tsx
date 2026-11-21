@@ -7,7 +7,10 @@ export async function MerchSection() {
   const cartUrl = getShopifyCartUrl();
 
   return (
-    <section id="merch" className="bg-black px-4 py-20 text-white md:py-28">
+    <section
+      id="merch"
+      className="border-t border-black/25 bg-msb-brown px-4 py-20 text-white md:py-28"
+    >
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3 text-center">
           <h2 className="font-display text-2xl tracking-[0.18em] md:text-3xl">MERCH</h2>
@@ -43,7 +46,7 @@ export async function MerchSection() {
               <p className="mt-1 text-sm text-white/75">{product.price}</p>
               <Link
                 href={product.url}
-                className="mt-4 border border-white/50 px-3 py-2 text-center font-display text-[10px] tracking-[0.18em] transition hover:border-white hover:bg-white hover:text-black"
+                className="mt-4 border border-white/50 px-3 py-2 text-center font-display text-[10px] tracking-[0.18em] transition hover:border-white hover:bg-white hover:text-msb-brown"
               >
                 VIEW
               </Link>
@@ -55,7 +58,7 @@ export async function MerchSection() {
           <div className="text-center">
             <Link
               href={cartUrl}
-              className="inline-block border border-white px-6 py-2.5 font-display text-xs tracking-[0.2em] transition hover:bg-white hover:text-black"
+              className="inline-block border border-white px-6 py-2.5 font-display text-xs tracking-[0.2em] transition hover:bg-white hover:text-msb-brown"
             >
               OPEN SHOP CART
             </Link>

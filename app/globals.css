@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
+  /* Squarespace site.css: body/header/footer use #100806; pre-footer uses #1f1a19 */
+  --background: #100806;
+  --background-elevated: #1f1a19;
   --foreground: #ffffff;
+  --accent: #e7d0ba;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-msb-brown: #100806;
+  --color-msb-brown-elevated: #1f1a19;
+  --color-msb-accent: #e7d0ba;
   --font-sans: var(--font-source-code);
   --font-display: var(--font-abel);
 }
@@ -33,4 +39,12 @@ a {
 .section-heading {
   font-family: var(--font-abel), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0.2em;
+}
+
+.section-surface {
+  background-color: var(--background);
+}
+
+.section-surface-elevated {
+  background-color: var(--background-elevated);
 }

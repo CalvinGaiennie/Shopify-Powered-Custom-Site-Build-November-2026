@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${abel.variable} ${sourceCodePro.variable} h-full`}>
-      <body className="min-h-full bg-black text-white antialiased">{children}</body>
+      <body className="min-h-full bg-msb-brown text-white antialiased">{children}</body>
     </html>
   );
 }
