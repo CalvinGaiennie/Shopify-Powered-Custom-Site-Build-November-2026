@@ -9,7 +9,7 @@ export function CartLink({ className = "" }: Props) {
   const cartUrl = getShopifyCartUrl();
 
   const shared =
-    "border border-white/80 px-2.5 py-1 font-display tracking-[0.18em] text-white transition hover:bg-white hover:text-black md:px-3 md:py-1.5";
+    "border border-white/80 px-2.5 py-1 font-display tracking-[0.18em] text-white transition hover:bg-white hover:text-msb-brown md:px-3 md:py-1.5";
 
   if (cartUrl) {
     return (

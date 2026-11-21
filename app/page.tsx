@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       <SiteHeader />
-      <main className="flex-1 bg-black">
+      <main className="flex-1 bg-msb-brown">
         <HeroSection />
         <ShowsSection />
         <BioSection />

@@ -66,12 +66,12 @@ export function MailchimpSignup({ initiallyConfigured }: Props) {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="Email address"
-          className="min-w-0 flex-1 border border-white/30 bg-black px-3 py-2.5 text-white placeholder:text-white/40 focus:border-white focus:outline-none"
+          className="min-w-0 flex-1 border border-white/30 bg-msb-brown px-3 py-2.5 text-white placeholder:text-white/40 focus:border-white focus:outline-none"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="border border-white px-5 py-2.5 font-display text-xs tracking-[0.2em] text-white transition hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-60"
+          className="border border-white px-5 py-2.5 font-display text-xs tracking-[0.2em] text-white transition hover:bg-white hover:text-msb-brown disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "loading" ? "SENDING…" : "JOIN LIST"}
         </button>

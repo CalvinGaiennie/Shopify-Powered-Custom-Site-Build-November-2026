@@ -4,7 +4,7 @@ import { SocialIcon } from "@/components/social-icon";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-black px-4 py-12 text-white md:py-16">
+    <footer className="border-t border-black/25 bg-msb-brown px-4 py-12 text-white md:py-16">
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-8">
         <Link
           href="#home"

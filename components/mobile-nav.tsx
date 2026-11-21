@@ -56,7 +56,7 @@ function MobileNavPanel({
   return (
     <div
       id="mobile-nav-panel"
-      className="fixed inset-0 z-40 bg-black/95 backdrop-blur-sm md:hidden"
+      className="fixed inset-0 z-40 bg-msb-brown/95 backdrop-blur-sm md:hidden"
       onClick={onClose}
     >
       <nav
