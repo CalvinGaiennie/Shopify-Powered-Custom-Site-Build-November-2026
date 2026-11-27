@@ -6,8 +6,8 @@ import { MobileNav } from "@/components/mobile-nav";
 
 export function SiteHeader() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-msb-brown/85 via-msb-brown/50 to-transparent">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 pb-4 pt-4 md:gap-5 md:pb-5 md:pt-5">
+    <header className="fixed inset-x-0 top-0 z-[100] isolate border-b border-white/10 bg-msb-brown/95 shadow-[0_8px_32px_rgba(0,0,0,0.55)] backdrop-blur-md supports-[backdrop-filter]:bg-msb-brown/90">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 pb-3 pt-3 md:gap-4 md:pb-4 md:pt-4">
         <div className="flex w-full items-center gap-3">
           <div className="flex w-10 shrink-0 md:w-0 md:overflow-hidden">
             <MobileNav links={navLinks} />
@@ -31,7 +31,10 @@ export function SiteHeader() {
           </div>
         </div>
 
-        <nav aria-label="Main" className="hidden md:block">
+        <nav
+          aria-label="Main"
+          className="hidden w-full border-t border-white/10 pt-3 md:block md:pt-4"
+        >
           <ul className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2">
             {navLinks.map((item) => (
               <li key={item.href}>
