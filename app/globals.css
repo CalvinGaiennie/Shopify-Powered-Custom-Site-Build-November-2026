@@ -7,6 +7,7 @@
    * site-wide (#0a0302 → #050201: same hue, lower luminance).
    */
   --msb-brown: #050201;
+  --site-header-scroll-padding: 7.75rem;
   --background: var(--msb-brown);
   --foreground: #ffffff;
   --accent: #e7d0ba;
@@ -23,6 +24,17 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--site-header-scroll-padding);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --site-header-scroll-padding: 10.75rem;
+  }
+}
+
+[id] {
+  scroll-margin-top: var(--site-header-scroll-padding);
 }
 
 body {
